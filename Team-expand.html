@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DGDA-Our Teams</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/other-css.css" />
+</head>
+
+<body class="inner">
+    <!-- top bar section -->
+    <section class="topactions-bar">
+        <div class="container">
+            <div class="d-flex m-auto m-sm-0">
+                <div class="accessibility-wrapper d-inline-flex">
+                    <div class="text-settings d-inline-flex">
+                        <span class="mt-3 d-none d-m1100-inline">Text setting</span>
+                        <div class="font-sizing-wrapper d-inline-flex mx-m1100-3">
+                            <span id="fontDecrease" class="font-sizing">A-</span>
+                            <span id="fontIncrease" class="font-sizing">A+</span>
+                        </div>
+                    </div>
+                    <div class="contrast-settings d-inline-flex">
+                        <span class="mt-3 d-none d-m1100-inline">contrast setting</span>
+                        <span class="d-inline-flex" id="colorsettings">
+                            <i class="icon color-icon"></i>
+                            <span class="mt-3 d-none d-m1100-inline">Color</span>
+                        </span>
+                        <span class="d-inline-flex" id="HightContrastsettings">
+                            <i class="icon HightContrast-icon"></i>
+                            <span class="mt-3 d-none d-m1100-inline">High Contrast</span>
+                        </span>
+                    </div>
+                </div>
+
+                <a href="#" class="contactbtn d-inline-flex ml-auto pr-m1100-3">
+                    <i class="icon phone-icon"></i>
+                    <span class="mt-3 d-none d-m1100-inline">Contact Us</span>
+                </a>
+
+                <a href="#" class="langbtn d-inline-flex"> عربي </a>
+            </div>
+        </div>
+    </section>
+    <!-- header section -->
+    <header class="header sticky-top">
+        <div class="container h-100">
+            <nav class="navbar navbar-expand-m1100 navbar-dark p-0 h-100">
+                <a class="logo" href="index.html"><img src="images/DGDA_logo.svg" alt="" /></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Our Services</a>
+                            <!-- Top Navigation Second Level Dropdown -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Urban planning</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Land management</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Development Permitting</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Partner Services</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Our Destinations</a>
+                            <!-- Top Navigation Second Level Dropdown -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Diriyah</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Wadi Safar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Functions</a>
+                            <!-- Top Navigation Second Level Dropdown -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Land and Municipal Affairs</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Community Connection</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Design & Development</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Heritage & Culture</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Media Center</a>
+                            <!-- Top Navigation Second Level Dropdown -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">News</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Media Requests</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Press Room</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Mutimedia Library</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- masthead section -->
+    <section class="team-top">
+        <div class="container">
+            <h2 class=" m-0 py-4 my-3">Team</h2>
+        </div>
+        <div class="team-top-img">
+            <div class="container">
+                <h2 class="team-top-heading col-md-9 mx-auto text-white text-center">Work commences on world’s largest
+                    cultural and heritage development Diriyah Gate, starting with Bujairi District</h2>
+            </div>
+        </div>
+    </section>
+    <!-- department section -->
+    <section class="department my-5 pt-4">
+        <div class="container">
+            <h2 class="mb-3">Select Department</h2>
+
+            <div class="row teams-tabs">
+                <div class="mb-3">
+                    <ul class="nav nav-tabs teams-ul" id="permitsTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center h-100 active"
+                                id="management-tab" data-toggle="tab" href="#Management" role="tab"
+                                aria-controls="Management" aria-selected="true">Management (10)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center h-100"
+                                id="project-manage-tab" data-toggle="tab" href="#ProjectManage" role="tab"
+                                aria-controls="ProjectManage" aria-selected="false">Project Management (68)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center h-100" id="QA-tab"
+                                data-toggle="tab" href="#QA" role="tab" aria-controls="QA" aria-selected="false">Quality
+                                Assurance (56)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center h-100"
+                                id="BusinessDev-tab" data-toggle="tab" href="#BusinessDev" role="tab"
+                                aria-controls="BusinessDev" aria-selected="false">Business Development (39)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center h-100"
+                                id="Finance&Operations-tab" data-toggle="tab" href="#Finance" role="tab"
+                                aria-controls="Finance&Operations" aria-selected="false">Finance & Operations (35)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center h-100" id="Growth-tab"
+                                data-toggle="tab" href="#Growth" role="tab" aria-controls="Growth"
+                                aria-selected="false">Growth (30)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center h-100" id="Strategy-tab"
+                                data-toggle="tab" href="#Strategy" role="tab" aria-controls="Strategy"
+                                aria-selected="false">Strategy (7)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center h-100" id="Tech-tab"
+                                data-toggle="tab" href="#Tech" role="tab" aria-controls="Tech"
+                                aria-selected="false">Tech & Agile Leads (5)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <div class="tab-content" id="">
+                        <div class="tab-pane fade active show" id="Management" role="tabpanel">
+                            <!-- start management section -->
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 20.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 22.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 25.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+                                <div class="col-6 col-md-4  col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 26.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 27.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+                                <!-- </div>
+                            <div class="row"> -->
+                                <div class="col-6 col-md-4 col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 28.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 29.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 30.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 6.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg text-center my-4 team-dep">
+                                    <img src="images/team/expand/Rectangle Copy 7.png" class="img-fluid">
+                                    <h6 class="mx-auto mt-3 mb-1">
+                                        Name </h6>
+                                    <small>Job Title</small>
+                                </div>
+
+                            </div>
+                            <!-- end management section -->
+                        </div>
+                        <div class="tab-pane fade" id="ProjectManage" role="tabpanel">
+                            <!-- start ProjectManage section -->
+
+                            <h1> Project Manager tab</h1>
+                            <!-- end ProjectManage section -->
+                        </div>
+
+                        <div class="tab-pane fade" id="QA" role="tabpanel">
+                            <!-- start QA section -->
+
+                            <h1> QA tab</h1>
+                            <!-- end QA section -->
+                        </div>
+
+                        <div class="tab-pane fade" id="BusinessDev" role="tabpanel">
+                            <!-- start BusinessDev section -->
+
+                            <h1> Business Dev tab</h1>
+                            <!-- end BusinessDev section -->
+                        </div>
+
+                        <div class="tab-pane fade" id="Finance" role="tabpanel">
+                            <!-- start Finance&Operations section -->
+
+                            <h1> Finance & Operations tab</h1>
+                            <!-- end Finance&Operations section -->
+                        </div>
+
+                        <div class="tab-pane fade" id="Growth" role="tabpanel">
+                            <!-- start Growth section -->
+
+                            <h1> Growth tab</h1>
+                            <!-- end Growth section -->
+                        </div>
+
+                        <div class="tab-pane fade" id="Strategy" role="tabpanel">
+                            <!-- start Strategy section -->
+
+                            <h1> Strategy tab</h1>
+                            <!-- end Strategy section -->
+                        </div>
+
+                        <div class="tab-pane fade" id="Tech" role="tabpanel">
+                            <!-- start Tech section -->
+
+                            <h1> Tech & Agile Leads tab</h1>
+                            <!-- end Tech section -->
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-6 col-md text-center my-4">
+                    <img src="images/team/directors/Prince-Badr.jpg" class="img-fluid">
+                    <h6 class="mx-auto mt-3 mb-1">HH<br>Prince Badr bin Abdullah bin Mohammed bin Farhan Al Saud</h6>
+                    <small class="text-secondary">Board Member</small>
+                </div>
+                <div class="col-6 col-md text-center my-4">
+                    <img src="images/team/directors/Prince-AbdulAziz.jpg" class="img-fluid">
+                    <h6 class="w-75 mx-auto mt-3 mb-1">HH<br>Prince Abdul Aziz bin Mohammed bin Ayyaf</h6>
+                    <small class="text-secondary">Board Member</small>
+                </div>
+                <div class="col-6 col-md text-center my-4">
+                    <img src="images/team/directors/Ahmed-AlKhateeb.jpg" class="img-fluid">
+                    <h6 class="w-75 mx-auto mt-3 mb-1">HRH<br>Ahmed AlKhateeb General Secretary</h6>
+                    <small class="text-secondary">Board Member</small>
+                </div>
+                <div class="col-6 col-md text-center my-4">
+                    <img src="images/team/directors/Dr.Fahd-AlSamari.jpg" class="img-fluid">
+                    <h6 class="w-75 mx-auto mt-3 mb-1">HRH<br>Dr. Fahd AlSamari</h6>
+                    <small class="text-secondary">Board Member</small>
+                </div>
+                <div class="col-6 col-md text-center my-4">
+                    <img src="images/team/directors/Ibrahim-AlSultan.jpg" class="img-fluid">
+                    <h6 class="w-75 mx-auto mt-3 mb-1">HRH<br>Ibrahim AlSultan</h6>
+                    <small class="text-secondary">Board Member</small>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="footer-links" data-aos="fade-in" data-aos-delay="100">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="newsLetter-wrapper" data-aos="fade-in" data-aos-delay="200">
+                        <h3>Subscribe to DGDA newsletter</h3>
+                        <div class="form-inline">
+                            <input type="text" name="" id="" class="form-control" placeholder="Email Address" />
+                            <input type="button" value="Subscribe" class="btn btn-secondary" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex footerLogo" data-aos="fade-in" data-aos-delay="400">
+                        <a href="#" class="d-flex justify-content-end pt-sm-0 pt-3">
+                            <img src="images/DGDA_logo.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" data-aos="fade-in" data-aos-delay="600">
+                <div class="col-md-6">
+                    <div class="socialLinks">
+                        <span>Follow Us</span>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="copyright d-flex justify-content-end pt-sm-0 pt-3">
+                        <p>
+                            © All rights reserved to Diriyah Gate Development Authority 2020
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/css-browser-selector/css_browser_selector.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

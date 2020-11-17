@@ -214,6 +214,15 @@ function toggleDropdown(e) {
     e.type === "mouseleave" ? 300 : 0
   );
 }
+
+// $("#date").on("input", function () {
+//   if ($(this).val().length > 0) {
+//     $(this).addClass("full");
+//   } else {
+//     $(this).removeClass("full");
+//   }
+// });
+
 $("body")
   .on("mouseenter mouseleave", ".dropdown", toggleDropdown)
   .on("click", ".dropdown-menu a", toggleDropdown);
