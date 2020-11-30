@@ -20,7 +20,7 @@
 
 /* Bootstrap Custom Classes
 -------------------------------------------------- */
-/*! Bootstrap v4.5.3 (https://getbootstrap.com/) Copyright 2011-2020 The Bootstrap Authors Copyright 2011-2020 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) */
+/*! Bootstrap v4.5.2 (https://getbootstrap.com/) Copyright 2011-2020 The Bootstrap Authors Copyright 2011-2020 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) */
 :root { --blue: #007bff; --indigo: #6610f2; --purple: #6f42c1; --pink: #e83e8c; --red: #dc3545; --orange: #fd7e14; --yellow: #f2e4b1; --green: #365029; --teal: #20c997; --cyan: #17a2b8; --white: #fff; --gray: #6c757d; --gray-dark: #343a40; --primary: #365029; --secondary: #bd9d7e; --success: #365029; --info: #17a2b8; --warning: #e74646; --danger: #dc3545; --light: #f8f9fa; --dark: #343a40; --yellow: #f2e4b1; --lightBrown: #bd9d7e; --green: #365029; --white: #fff; --breakpoint-xs: 0; --breakpoint-sm: 600px; --breakpoint-md: 768px; --breakpoint-m1100: 1100px; --breakpoint-m1200: 1200px; --breakpoint-lg: 1300px; --breakpoint-xl: 1600px; --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -85,7 +85,7 @@ table { border-collapse: collapse; }
 
 caption { padding-top: 0.75rem; padding-bottom: 0.75rem; color: #6c757d; text-align: left; caption-side: bottom; }
 
-th { text-align: inherit; text-align: -webkit-match-parent; }
+th { text-align: inherit; }
 
 label { display: inline-block; margin-bottom: 0.5rem; }
 
@@ -1411,7 +1411,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .input-group > .input-group-append > .btn, .input-group > .input-group-append > .input-group-text, .input-group > .input-group-prepend:not(:first-child) > .btn, .input-group > .input-group-prepend:not(:first-child) > .input-group-text, .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) { border-top-left-radius: 0; border-bottom-left-radius: 0; }
 
-.custom-control { position: relative; z-index: 1; display: block; min-height: 1.2rem; padding-left: 1.5rem; color-adjust: exact; }
+.custom-control { position: relative; z-index: 1; display: block; min-height: 1.2rem; padding-left: 1.5rem; }
 
 .custom-control-inline { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin-right: 1rem; }
 
@@ -1947,7 +1947,7 @@ a.badge-white:focus, a.badge-white.focus { outline: 0; -webkit-box-shadow: 0 0 0
 
 .alert-dismissible { padding-right: 4rem; }
 
-.alert-dismissible .close { position: absolute; top: 0; right: 0; z-index: 2; padding: 0.75rem 1.25rem; color: inherit; }
+.alert-dismissible .close { position: absolute; top: 0; right: 0; padding: 0.75rem 1.25rem; color: inherit; }
 
 .alert-primary { color: #1c2a15; background-color: #d7dcd4; border-color: #c7cec3; }
 
@@ -3902,7 +3902,7 @@ a.text-white:hover, a.text-white:focus { color: #d9d9d9 !important; }
 
 .text-decoration-none { text-decoration: none !important; }
 
-.text-break { word-break: break-word !important; word-wrap: break-word !important; }
+.text-break { word-break: break-word !important; overflow-wrap: break-word !important; }
 
 .text-reset { color: inherit !important; }
 
@@ -4134,6 +4134,8 @@ footer .rel-websites, .footer .rel-websites { min-height: 120px; }
 .Services-HomeLinks .home-linkbanner:hover:before { background-color: rgba(255, 255, 255, 0.75); }
 
 .Services-HomeLinks .home-linkbanner:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.Services-HomeLinks .swiper-wrapper { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .top-shade-bg, .bottom-shade-bg { position: relative; }
 
