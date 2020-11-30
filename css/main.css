@@ -4073,17 +4073,17 @@ footer ul.footer-links li a, footer .footer-links li a, .footer ul.footer-links 
 
 footer ul.footer-links li a:hover, footer .footer-links li a:hover, .footer ul.footer-links li a:hover, .footer .footer-links li a:hover { color: #bd9d7e; }
 
-footer .newsLetter-wrapper h3, .footer .newsLetter-wrapper h3 { font-size: 1.5rem; }
+footer .newsLetter-wrapper h3, .footer .newsLetter-wrapper h3 { font-size: 1.5rem; text-align: center; margin-bottom: 1.25rem; }
 
 footer .newsLetter-wrapper .form-control, .footer .newsLetter-wrapper .form-control { margin-right: 2%; width: 68%; }
-
-@media (min-width: 1100px) { footer .newsLetter-wrapper .form-control, .footer .newsLetter-wrapper .form-control { max-width: 360px; } }
 
 footer .newsLetter-wrapper .btn, .footer .newsLetter-wrapper .btn { width: 30%; padding: 0 2%; max-width: 165px; }
 
 @media (max-width: 370px) { footer .newsLetter-wrapper .btn, .footer .newsLetter-wrapper .btn { font-size: 0.95rem; } }
 
-footer .footerLogo a, .footer .footerLogo a { margin: 0 0 auto auto; }
+footer .footerLogo, .footer .footerLogo { margin-bottom: 3.125rem; }
+
+footer .footerLogo a, .footer .footerLogo a { margin: 0 auto auto 0; }
 
 @media (max-width: 1100px) { footer .footerLogo a, .footer .footerLogo a { margin-left: 0; margin-right: auto; -webkit-box-pack: start !important; -ms-flex-pack: start !important; justify-content: start !important; } }
 
@@ -4091,15 +4091,19 @@ footer .footerLogo img, .footer .footerLogo img { max-width: 100px; }
 
 footer a, .footer a { color: inherit; }
 
+footer .socialLinks, .footer .socialLinks { margin-top: 1.25rem; margin-bottom: 3.125rem; }
+
 footer .socialLinks span, .footer .socialLinks span { font-size: 1.5rem; font-weight: 600; text-transform: capitalize; }
 
-footer .socialLinks a, .footer .socialLinks a { margin-left: 1.3rem; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+footer .socialLinks a, .footer .socialLinks a { margin: 0 0.65rem; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-footer .socialLinks a i.fab, .footer .socialLinks a i.fab { font-size: 2rem; }
+footer .socialLinks a i.fab, .footer .socialLinks a i.fab { font-size: 2.6rem; }
 
 footer .socialLinks a:hover, .footer .socialLinks a:hover { color: #bd9d7e; }
 
-footer .copyright p, .footer .copyright p { font-weight: 400; }
+footer .copyright p, .footer .copyright p { font-weight: 400; margin-top: 1.25rem; }
+
+footer .rel-websites, .footer .rel-websites { min-height: 120px; }
 
 .home-swiper { height: 550px; height: calc(100vh - 310px); min-height: 410px; margin-top: -10px; }
 
