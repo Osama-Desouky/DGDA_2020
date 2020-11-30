@@ -499,8 +499,9 @@ footer,
   height: 150px;
   position: relative;
   z-index: 2;
-  top: -110px;
-  margin-bottom: -110px;
+  top: -104px;
+  margin-bottom: -156px;
+
   .swiper-wrapper {
     @media (min-width: 1200px) {
       // justify-content: space-around;
@@ -509,11 +510,12 @@ footer,
   .home-linkbanner {
     display: flex;
     overflow: hidden;
+    align-items: center;
     &:before {
       content: "";
       position: absolute;
       z-index: 1;
-      background-color: rgba(0, 0, 0, 0.25);
+      background-color: rgba(255, 255, 255, 0.5);
       width: 100%;
       height: 100%;
       left: 0;
@@ -521,7 +523,7 @@ footer,
       @include trans(0.3s);
     }
     &--text {
-      position: absolute;
+      position: static;
       z-index: 2;
       width: 70%;
       height: 100%;
@@ -531,7 +533,7 @@ footer,
       text-transform: uppercase;
       padding: 1.5rem;
       font-weight: $boldW;
-      color: $white;
+      color: $green;
     }
     img {
       position: relative;
@@ -540,10 +542,11 @@ footer,
       height: 100%;
       object-fit: cover;
       @include trans(0.3s);
+      display: none;
     }
     &:hover {
       &:before {
-        background-color: rgba(0, 0, 0, 0.15);
+        background-color: rgba(255, 255, 255, 0.75);
       }
       img {
         transform: scale(1.1);
@@ -1615,7 +1618,7 @@ section.CSV-LocalBusiness {
 }
 
 /*--- highcontrast --*/
-.highcontrast{
+.highcontrast {
   filter: grayscale(1) contrast(1.3);
 }
 @import "mediaQuery";
