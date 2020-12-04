@@ -13962,4 +13962,40 @@ section.CSV-LocalBusiness .NewsNavigation .swiper-button-prev {
   filter: grayscale(1) contrast(1.3);
 }
 
+.submenu-children {
+  display: none;
+  width: calc(100% - 30px);
+  border: 3px solid #bd9d7e;
+  margin: auto;
+}
+.submenu-children .submenuLink {
+  border-bottom: none !important;
+}
+
+.submenuLink.submenu-parent:after {
+  content: "";
+  display: inline-block;
+  border: 0;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.submenuLink.submenu-parent:hover::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23365029'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.submenuLink.submenu-parent.active {
+  padding-bottom: 2.5rem !important;
+  background-color: #bd9d7e;
+  color: #365029 !important;
+}
+.submenuLink.submenu-parent.active:after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23365029'/%3E%3C/g%3E%3C/svg%3E%0A");
+  transform: rotateZ(180deg);
+}
+
 /*# sourceMappingURL=main.css.map */

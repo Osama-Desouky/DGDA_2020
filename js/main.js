@@ -6,19 +6,19 @@ $(function () {
   });
   /* --- HighContrast Function --- */
   $("#HightContrastsettings").on("click", function () {
-    if($('body').hasClass('highcontrast')){
-      $('body').removeClass('highcontrast');
-    }else{
-      $('body').addClass('highcontrast');
+    if ($("body").hasClass("highcontrast")) {
+      $("body").removeClass("highcontrast");
+    } else {
+      $("body").addClass("highcontrast");
     }
   });
 
   /* --- Font sizing Function --- */
-  $('#fontIncrease').click(function(){
-    modifyFontSize('html','increase');
+  $("#fontIncrease").click(function () {
+    modifyFontSize("html", "increase");
   });
-  $('#fontDecrease').click(function(){
-    modifyFontSize('html','decrease')
+  $("#fontDecrease").click(function () {
+    modifyFontSize("html", "decrease");
   });
 
   /* --- navbar fixed top on scroll --- */
@@ -153,9 +153,16 @@ $(function () {
   });
 
   // select 2
-  if ($('.custom-select').length){
+  if ($(".custom-select").length) {
     $(".custom-select").select2();
   }
+  $(".submenu-parent").on("click", function (e) {
+    e.stopPropagation();
+    $(this).toggleClass("active");
+    var parentId = $(this).attr("id");
+    var childrenEl = $("div[parent-id=" + parentId + "]");
+    childrenEl.toggle();
+  });
 });
 
 // custom file upload plugin init
@@ -214,10 +221,10 @@ function stickyheader() {
   // console.log(scroll);
   if (scroll > 110) {
     $(".header").addClass("scrolled");
-    $(".topactions-bar").css("margin-bottom","140px");
-  } else{
+    $(".topactions-bar").css("margin-bottom", "140px");
+  } else {
     $(".header").removeClass("scrolled");
-    $(".topactions-bar").css("margin-bottom","0");
+    $(".topactions-bar").css("margin-bottom", "0");
   }
 }
 /* --- opens navbar dropdown on mouse hover --- */
@@ -238,21 +245,16 @@ $("body")
   .on("mouseenter mouseleave", ".dropdown", toggleDropdown)
   .on("click", ".dropdown-menu a", toggleDropdown);
 
-  /*----Font sizing Function ---*/
-  function modifyFontSize(MyElement,flag){
+/*----Font sizing Function ---*/
+function modifyFontSize(MyElement, flag) {
+  var HtmlElement = $(MyElement);
+  var currentFontSize = parseInt(HtmlElement.css("font-size"));
 
-    var HtmlElement = $(MyElement);
-    var currentFontSize = parseInt (HtmlElement.css('font-size'));
-    
-    if (flag =='increase' & currentFontSize < 19 )
-        currentFontSize += 1;
-    else if (flag == 'decrease' & currentFontSize >= 16 )
-        currentFontSize -= 1;
-    else if (flag == 'reset')
-    currentFontSize = 16;
+  if ((flag == "increase") & (currentFontSize < 19)) currentFontSize += 1;
+  else if ((flag == "decrease") & (currentFontSize >= 16)) currentFontSize -= 1;
+  else if (flag == "reset") currentFontSize = 16;
 
-    HtmlElement.css('font-size', currentFontSize);
+  HtmlElement.css("font-size", currentFontSize);
 
-    // console.log(currentFontSize);
-
-  }
+  // console.log(currentFontSize);
+}
