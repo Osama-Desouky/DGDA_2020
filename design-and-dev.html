@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGDA-Design & Development</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/other-css.css">
+</head>
+
+<body>
+    <!-- top bar section -->
+    <section class="topactions-bar">
+        <div class="container">
+
+            <div class="d-flex m-auto m-sm-0">
+                <div class="accessibility-wrapper d-inline-flex">
+                    <div class="text-settings d-inline-flex">
+                        <span class="mt-3 d-none d-m1100-inline">Text setting</span>
+                        <div class="font-sizing-wrapper d-inline-flex mx-m1100-3">
+                            <span id="fontDecrease" class="font-sizing">A-</span>
+                            <span id="fontIncrease" class="font-sizing">A+</span>
+                        </div>
+                    </div>
+                    <div class="contrast-settings d-inline-flex">
+                        <span class="mt-3 d-none d-m1100-inline">contrast setting</span>
+                        <span class="d-inline-flex" id="colorsettings">
+                            <i class="icon color-icon"></i>
+                            <span class="mt-3 d-none d-m1100-inline">Color</span>
+                        </span>
+                        <span class="d-inline-flex" id="HightContrastsettings">
+                            <i class="icon HightContrast-icon"></i>
+                            <span class="mt-3 d-none d-m1100-inline">High Contrast</span>
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <a href="#" class="contactbtn d-inline-flex ml-auto pr-m1100-3">
+                    <i class="icon phone-icon"></i>
+                    <span class="mt-3 d-none d-m1100-inline">Contact Us</span>
+                </a>
+
+                <a href="#" class="langbtn d-inline-flex">
+                    عربي
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- header section -->
+    <header class="header sticky-top">
+        <div class="container h-100">
+            <nav class="navbar navbar-expand-m1100 navbar-dark p-0 h-100">
+                <a class="logo" href="index.html"><img src="images/DGDA_logo.svg" alt=""></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Our Services</a>
+                            <!-- Top Navigation Second Level Dropdown -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Urban planning</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Land management</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Development Permitting</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Partner Services</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Our Destinations</a>
+                            <!-- Top Navigation Second Level Dropdown -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Diriyah</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Wadi Safar</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Functions</a>
+                            <!-- Top Navigation Second Level Dropdown -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Land and Municipal Affairs</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Community Connection</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Design & Development</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Heritage & Culture</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Media Center</a>
+                            <!-- Top Navigation Second Level Dropdown -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">News</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Media Requests</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Press Room</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="submenuLink">Mutimedia Library</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- section one -->
+    <section class="top-section">
+        <div class="container">
+            <h2 class=" m-0 py-4 my-3">Design & Development</h2>
+        </div>
+        <div class="top-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h2 class="text-uppercase"> The <br> world’s <br> Greatest<br> Gathering <br> Place</h2>
+                        <p class="left-p"> DGDA is transforming Diriyah into one of the region’s foremost destinations
+                            for cultural
+                            knowledge-sharing activities and international events.</p>
+                    </div>
+                    <div class="col-7 offset-md-2">
+                        <div class="onImg-content d-flex flex-column  justify-content-end h-100">
+                            <p>
+                                We aspire to develop Diriyah into a global gathering place by creating rich experiences
+                                that
+                                narrate the stories of our history, instilling a sense of Saudi Arabian pride and
+                                creating
+                                globally renowned destinations and landmarks.
+
+                            </p>
+
+                            <p>
+                                The Authority is ensuring Diriyah’s cultural landmarks are complemented by leading
+                                hospitality brands, fine dining experiences and world-class retail offerings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section two Welcome -->
+    <section class="Welcome-section">
+        <div class="container">
+            <h2 class=" m-0 py-4 my-3">Welcome to Diriyah Gate</h2>
+        </div>
+        <div class="Welcome-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="p1">
+                            As part of Vision 2030, seven square kilometers of iconic Diriyah will be transformed into
+                            one of the Kingdom’s most prominent tourism destinations. Drawing on the region’s rich past,
+                            Diriyah Gate will reflect the Najdi architecture of 300 years past, newly adapted for 21st
+                            century living.
+                        </p>
+                        <p class="p2">
+                            The development, upon completion, will feature an array of world-class cultural,
+                            entertainment, retail, hospitality, educational, office and residential areas including more
+                            than 20 cultural attractions, more than 20 hotels and over 100 places to dine.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p class="p1">
+                            The project includes a series of outdoor plazas as well as a 3km escarpment walk offering
+                            views across the historic Wadi Hanifah. Diriyah Gate will comprise the Kingdom's most
+                            walkable collection of heritage and culture offerings and one of the Kingdom’s largest
+                            lifestyle shopping destinations.
+                        </p>
+                        <p class="p2">
+                            The premier cultural and lifestyle destination will be home to a population of 100,000 and
+                            is set to attract 25 million visitors annually - a place to gather, explore, shop, dine,
+                            live and work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gate section -->
+    <section class="gate-section">
+        <div class="gate-img">
+            <div class="">
+                <div class="gate-content p-5">
+                    <div class="container">
+                        <h5 class="text-uppercase">Diriyah Gate </h5>
+                        <p>
+                            A 7 square kilometer mixed-use destination set to become Saudi Arabia’s foremost historic
+                            cultural and lifestyle destination
+                        </p>
+                        <a href="#">
+                            Click here to visit Diryah Gate’s website
+                            <i class="arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Deck section -->
+    <section class="Investor">
+        <div class="container">
+            <h2>Investor Deck</h2>
+            <div class=" p-3 p-md-5 Investor-content ">
+                <div class="row">
+                    <div class="col-md-3 mb-4 mb-md-0 ">
+                        <img src="images/design&dev/13.png" alt="" class="img-fluid ">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="align-items-start d-flex flex-column h-100 justify-content-end">
+                            <p class="Investor-p">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                                has
+                                roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                                old. Richard McClintock, a Latin professor at Hampden-Sydney College
+                                in Virginia, looked up one of the more obscure Latin words, consectetur,
+                            </p>
+                            <p class="Investor-p">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                                has
+                                roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                                old. Richard McClintock, a Latin professor at Hampden-Sydney College
+                                in Virginia, looked up one of the more obscure Latin words, consectetur,</p>
+                            <a href="#" class="btn btn-white mt-4" role="button">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class=" space-between-sections "></div>
+
+    <!-- vendor section -->
+    <section class="vendor pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        Vendor Pre-qualification
+                    </h2>
+                    <p>
+                        Over the coming years, the DGDA will deliver on its promise of developing large-scale
+                        infrastructure and a mixture of assets for various projects. As part of the Diriyah Gate Project
+                        (DG), Diriyah Gate Development Authority (DGDA) is taking the step to develop information
+                        guidance and soliciting information for evaluating and establishing vendor (Contractor /
+                        Consultant) qualifications. DGDA requires interested vendors to establish a proof of their
+                        proficiency and responsibility through submitting a prequalification questionnaire, together
+                        with any requested supplemental information for the purpose of evaluating contractors. The
+                        aforementioned questionnaires for Contractors and Consultants can be downloaded below.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row vendor-2nd-section">
+                <div class=" Contractors">
+                    <div class="row">
+                        <div class="col-7 ">
+                            <h4 class="text-uppercase">Contractors </h4>
+                            <div class="btn-div d-flex flex-column  justify-content-end">
+                                <a href="#" class="btn  mt-4" role="button">Download</a>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <img src="images/design&dev/13.png" alt="" class="img-fluid ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" Consultants">
+                    <div class="row">
+                        <div class="col-7 ">
+                            <h4 class="text-uppercase">Consultants </h4>
+                            <div class="btn-div d-flex flex-column justify-content-end">
+                                <a href="#" class="btn mt-4" role="button">Download</a>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <img src="images/design&dev/13.png" alt="" class="img-fluid ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section top-shade-bg pb-70">
+        <div class="container">
+            <div class="green-bg p-4 p-lg-5 text-center contact-content ">
+                <h4 class="text-lightBrown text-uppercase" data-aos="fade-in" data-aos-delay="70">Contact</h4>
+
+                <h1 class="mx-2 mx-md-4 my-2">
+                    <i class="icon phon-icon mx-2 mx-md-4"></i>
+                    92 000 26 22
+                </h1>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="footer-links" data-aos="fade-in" data-aos-delay="100">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="newsLetter-wrapper" data-aos="fade-in" data-aos-delay="200">
+                        <h3>Subscribe to DGDA newsletter</h3>
+                        <div class="form-inline">
+                            <input type="text" name="" id="" class="form-control" placeholder="Email Address">
+                            <input type="button" value="Subscribe" class="btn btn-secondary">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex footerLogo" data-aos="fade-in" data-aos-delay="400">
+                        <a href="#" class="d-flex justify-content-end pt-sm-0 pt-3">
+                            <img src="images/DGDA_logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" data-aos="fade-in" data-aos-delay="600" data-aos-offset="0">
+                <div class="col-md-6">
+                    <div class="socialLinks">
+                        <span>Follow Us</span>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="copyright d-flex justify-content-end pt-sm-0 pt-3">
+                        <p>
+                            © All rights reserved to Diriyah Gate Development Authority 2020
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/css-browser-selector/css_browser_selector.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
